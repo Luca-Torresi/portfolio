@@ -92,6 +92,19 @@ img {
   padding-right: 2rem;
 }
 
+/* Flexbox en móvil para mantener el orden visual original */
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.home { order: 1; }
+.about { order: 2; }
+.experience { order: 3; }
+.education { order: 4; }
+.skills { order: 5; }
+.projects { order: 6; }
+
 /* REUSABLE CLASSES */
 .section {
   padding: 3rem 0;
@@ -245,13 +258,19 @@ img {
 }
 
 .home__title {
-  font-size: 2.5rem;
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.home__subtitle {
+  font-size: 1.5rem;
   line-height: 1.1;
   margin-bottom: 0.5rem;
 }
 
 .home__profession {
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: var(--first-color);
   font-weight: 400;
   margin-bottom: 1.5rem;
@@ -352,12 +371,11 @@ img {
   display: none;
 }
 
-/* Hide timeline dots */
-
 /* SKILLS */
 .skills__container {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, 250px);
+  justify-content: start;
+  gap: 3rem;
 }
 
 .skills__content {
@@ -376,24 +394,33 @@ img {
 
 .skills__group {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 .skills__data {
-  border: 1px solid var(--line-color);
-  padding: 0.25rem 0.6rem;
-  border-radius: 3px;
-  background: #fff;
-  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.skills__icon,
+.skills__icon {
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+
+.skills__name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
 .skills__level {
-  display: none;
+  font-size: 0.85rem;
+  color: var(--text-color-light);
 }
-
-/* Minimal */
 
 /* EXPERIENCE & PROJECTS */
 .experience__card,
@@ -492,5 +519,44 @@ img {
   .home__img {
     width: 180px;
     height: 180px;
+  }
+}
+
+/* WIDE SCREEN DESKTOP - FULL WIDTH AND COLUMNS */
+@media screen and (min-width: 1024px) {
+  .header,
+  .main,
+  .footer {
+    max-width: 1400px; /* Expande la página casi al total de la pantalla */
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .main {
+    display: block; /* Desactiva el flexbox del móvil */
+    column-count: 2; /* Divide las secciones en dos columnas de cascada (masonry) */
+    column-gap: 5rem;
+    position: relative;
+    padding-top: 2rem;
+  }
+
+  .home {
+    /* La sección de inicio ocupa ambas columnas como encabezado principal */
+    column-span: all;
+    border-bottom: 2px solid var(--line-color);
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .skills {
+    /* La sección de tecnologías ocupa todo el ancho y no se incluye en las columnas */
+    column-span: all;
+  }
+
+  .section {
+    /* Evita que una sección empiece en una columna y termine en otra */
+    break-inside: avoid;
+    border-bottom: none; /* Quitamos las líneas separadoras, las columnas separan el contenido */
+    padding: 1.5rem 0 3.5rem 0;
   }
 }

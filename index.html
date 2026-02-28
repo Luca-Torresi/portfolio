@@ -93,11 +93,12 @@
       </div>
     </section>
 
+    
     <!-- EDUCACION -->
     <section class="education section" id="educacion">
       <h2 class="section__title">Educación</h2>
       <span class="section__subtitle">Mi formación académica</span>
-
+      
       <div class="education__container container">
         <div class="education__content">
           <div class="education__time">
@@ -110,7 +111,7 @@
             <span class="education__year">2023 - Presente</span>
           </div>
         </div>
-
+        
         <div class="education__content">
           <div class="education__time">
             <span class="education__rounder"></span>
@@ -122,21 +123,95 @@
             <span class="education__year">2018 - 2021</span>
             <p class="education__description">3 años de estudios avanzados cursados, desarrollando una
               sólida base en resolución de problemas complejos y pensamiento analítico.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="education__content">
-          <div class="education__time">
-            <span class="education__rounder"></span>
-          </div>
-          <div class="education__data bd-grid">
-            <h3 class="education__title">Bachiller en Ciencias Naturales</h3>
-            <span class="education__studies">Colegio Universitario Central, UNCuyo</span>
-            <span class="education__year">Egresado en 2017</span>
+          <div class="education__content">
+            <div class="education__time">
+              <span class="education__rounder"></span>
+            </div>
+            <div class="education__data bd-grid">
+              <h3 class="education__title">Bachiller en Ciencias Naturales</h3>
+              <span class="education__studies">Colegio Universitario Central, UNCuyo</span>
+              <span class="education__year">Egresado en 2017</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- EXPERIENCIA -->
+      <section class="experience section" id="experiencia">
+        <h2 class="section__title">Experiencia Laboral</h2>
+        <span class="section__subtitle">Mi trayectoria profesional</span>
+  
+        <div class="experience__container container grid">  
+          <div class="experience__card">
+            <div class="experience__header">
+              <h3 class="experience__title">Desarrollador Full Stack Freelance</h3>
+              <span class="experience__company">PinkyHoops - POS y Facturación Electrónica</span>
+              <div class="experience__links">
+                <a href="#" class="button button--small button--link">
+                  Ver Proyecto <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <p class="experience__description">
+              Arquitectura, desarrollo y despliegue en la nube de un sistema web integral para una joyería. La plataforma
+              cubre la gestión completa de inventario multimedia, punto de venta (POS) y emisión de comprobantes fiscales
+              oficiales.
+            </p>
+            <ul class="experience__list">
+              <li><i class="fa-solid fa-check"></i> <strong>Integración Gubernamental:</strong> Implementé Web Services
+                SOAP de AFIP en producción para facturación electrónica y consulta de padrones (A13).</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Arquitectura Cloud:</strong> Desplegué la aplicación en un
+                entorno de monorepo utilizando Vercel para el Frontend y Railway para el Backend.</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Backend Robusto:</strong> Desarrollado en NestJS (TypeScript),
+                incorporando seguridad avanzada con JWT, Refresh Tokens y manejo de cookies seguras.</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Frontend Interactivo:</strong> Construido con React y Vite,
+                gestionando estados complejos con Zustand e interceptores de Axios para la resiliencia de sesiones.</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Gestión Multimedia y Hardware:</strong> Integré la API de
+                Cloudinary para optimización de imágenes y sincronicé lectores de códigos de barras físicos manejando
+                latencia de eventos en caja.</li>
+            </ul>
+            <div class="experience__tags">
+              <span>NestJS</span><span>React</span><span>TypeScript</span><span>AFIP API</span><span>Vercel /
+                Railway</span><span>Cloudinary</span>
+            </div>
+          </div>
+  
+          <div class="experience__card">
+            <div class="experience__header">
+              <h3 class="experience__title">Desarrollador Full Stack Freelance</h3>
+              <span class="experience__company">App Negocio - Sistema de Gestión y POS</span>
+              <div class="experience__links">
+                <a href="#" class="button button--small button--link">
+                  Ver Repositorio <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <p class="experience__description">
+              Desarrollo de una aplicación completa de escritorio para la gestión integral de un negocio
+              minorista (pañalera), cubriendo inventario, ventas, compras, promociones y reportes analíticos.
+            </p>
+            <ul class="experience__list">
+              <li><i class="fa-solid fa-check"></i> Diseñé e implementé una API RESTful robusta utilizando
+                Spring Boot y Spring Data JPA.</li>
+              <li><i class="fa-solid fa-check"></i> Modelé y gestioné la base de datos relacional (MySQL) con
+                Hibernate.</li>
+              <li><i class="fa-solid fa-check"></i> Desarrollé una interfaz moderna con React, TypeScript y
+                Tailwind CSS.</li>
+              <li><i class="fa-solid fa-check"></i> Implementé manejo de estado global con Zustand.</li>
+              <li><i class="fa-solid fa-check"></i> Creé un panel de estadísticas con react-google-charts.
+              </li>
+              <li><i class="fa-solid fa-check"></i> Integré hardware externo (lector de código de barras).
+              </li>
+            </ul>
+            <div class="experience__tags">
+              <span>Java</span><span>Spring Boot</span><span>React</span><span>MySQL</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!-- TECNOLOGIAS -->
     <section class="skills section" id="tecnologias">
@@ -148,29 +223,29 @@
         <div class="skills__content">
           <h3 class="skills__title"><i class="fa-solid fa-server"></i> Backend</h3>
           <div class="skills__box">
-            <div class="skills__group">
-              <div class="skills__data">
+            <ul class="skills__group">
+              <li class="skills__data">
                 <i class="fa-brands fa-java skills__icon"></i>
                 <div>
                   <h3 class="skills__name">Java</h3>
                   <span class="skills__level">Avanzado</span>
                 </div>
-              </div>
-              <div class="skills__data">
+              </li>
+              <li class="skills__data">
                 <i class="fa-solid fa-leaf skills__icon"></i>
                 <div>
                   <h3 class="skills__name">Spring Boot</h3>
                   <span class="skills__level">Avanzado</span>
                 </div>
-              </div>
-              <div class="skills__data">
+              </li>
+              <li class="skills__data">
                 <i class="fa-solid fa-database skills__icon"></i>
                 <div>
                   <h3 class="skills__name">Hibernate/JPA</h3>
                   <span class="skills__level">Intermedio</span>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -178,29 +253,29 @@
         <div class="skills__content">
           <h3 class="skills__title"><i class="fa-solid fa-code"></i> Frontend</h3>
           <div class="skills__box">
-            <div class="skills__group">
-              <div class="skills__data">
+            <ul class="skills__group">
+              <li class="skills__data">
                 <i class="fa-brands fa-react skills__icon"></i>
                 <div>
                   <h3 class="skills__name">React</h3>
                   <span class="skills__level">Intermedio</span>
                 </div>
-              </div>
-              <div class="skills__data">
+              </li>
+              <li class="skills__data">
                 <i class="fa-brands fa-js skills__icon"></i>
                 <div>
                   <h3 class="skills__name">TypeScript/JS</h3>
                   <span class="skills__level">Intermedio</span>
                 </div>
-              </div>
-              <div class="skills__data">
+              </li>
+              <li class="skills__data">
                 <i class="fa-brands fa-html5 skills__icon"></i>
                 <div>
                   <h3 class="skills__name">HTML & CSS</h3>
                   <span class="skills__level">Intermedio</span>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -208,166 +283,50 @@
         <div class="skills__content">
           <h3 class="skills__title"><i class="fa-solid fa-toolbox"></i> DB & Herramientas</h3>
           <div class="skills__box">
-            <div class="skills__group">
-              <div class="skills__data">
+            <ul class="skills__group">
+              <li class="skills__data">
                 <i class="fa-solid fa-database skills__icon"></i>
                 <div>
                   <h3 class="skills__name">MySQL / H2</h3>
                 </div>
-              </div>
-              <div class="skills__data">
+              </li>
+              <li class="skills__data">
                 <i class="fa-brands fa-git-alt skills__icon"></i>
                 <div>
                   <h3 class="skills__name">Git / GitHub</h3>
                 </div>
-              </div>
-              <div class="skills__data">
+              </li>
+              <li class="skills__data">
                 <i class="fa-brands fa-docker skills__icon"></i>
                 <div>
                   <h3 class="skills__name">Docker</h3>
                 </div>
-              </div>
-              <div class="skills__data">
+              </li>
+              <li class="skills__data">
                 <i class="fa-solid fa-bolt skills__icon"></i>
                 <div>
                   <h3 class="skills__name">Redis / Postman</h3>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- EXPERIENCIA -->
-    <section class="experience section" id="experiencia">
-      <h2 class="section__title">Experiencia Laboral</h2>
-      <span class="section__subtitle">Mi trayectoria profesional</span>
-
-      <div class="experience__container container grid">  
-        <div class="experience__card">
-          <div class="experience__header">
-            <h3 class="experience__title">Desarrollador Full Stack Freelance</h3>
-            <span class="experience__company">PinkyHoops - POS y Facturación Electrónica</span>
-            <div class="experience__links">
-              <a href="#" class="button button--small button--link">
-                Ver Proyecto <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-          <p class="experience__description">
-            Arquitectura, desarrollo y despliegue en la nube de un sistema web integral para una joyería. La plataforma
-            cubre la gestión completa de inventario multimedia, punto de venta (POS) y emisión de comprobantes fiscales
-            oficiales.
-          </p>
-          <ul class="experience__list">
-            <li><i class="fa-solid fa-check"></i> <strong>Integración Gubernamental:</strong> Implementé Web Services
-              SOAP de AFIP en producción para facturación electrónica y consulta de padrones (A13).</li>
-            <li><i class="fa-solid fa-check"></i> <strong>Arquitectura Cloud:</strong> Desplegué la aplicación en un
-              entorno de monorepo utilizando Vercel para el Frontend y Railway para el Backend.</li>
-            <li><i class="fa-solid fa-check"></i> <strong>Backend Robusto:</strong> Desarrollado en NestJS (TypeScript),
-              incorporando seguridad avanzada con JWT, Refresh Tokens y manejo de cookies seguras.</li>
-            <li><i class="fa-solid fa-check"></i> <strong>Frontend Interactivo:</strong> Construido con React y Vite,
-              gestionando estados complejos con Zustand e interceptores de Axios para la resiliencia de sesiones.</li>
-            <li><i class="fa-solid fa-check"></i> <strong>Gestión Multimedia y Hardware:</strong> Integré la API de
-              Cloudinary para optimización de imágenes y sincronicé lectores de códigos de barras físicos manejando
-              latencia de eventos en caja.</li>
-          </ul>
-          <div class="experience__tags">
-            <span>NestJS</span><span>React</span><span>TypeScript</span><span>AFIP API</span><span>Vercel /
-              Railway</span><span>Cloudinary</span>
-          </div>
-        </div>
-
-        <div class="experience__card">
-          <div class="experience__header">
-            <h3 class="experience__title">Desarrollador Full Stack Freelance</h3>
-            <span class="experience__company">App Negocio - Sistema de Gestión y POS</span>
-            <div class="experience__links">
-              <a href="#" class="button button--small button--link">
-                Ver Repositorio <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-          <p class="experience__description">
-            Desarrollo de una aplicación completa de escritorio para la gestión integral de un negocio
-            minorista (pañalera), cubriendo inventario, ventas, compras, promociones y reportes analíticos.
-          </p>
-          <ul class="experience__list">
-            <li><i class="fa-solid fa-check"></i> Diseñé e implementé una API RESTful robusta utilizando
-              Spring Boot y Spring Data JPA.</li>
-            <li><i class="fa-solid fa-check"></i> Modelé y gestioné la base de datos relacional (MySQL) con
-              Hibernate.</li>
-            <li><i class="fa-solid fa-check"></i> Desarrollé una interfaz moderna con React, TypeScript y
-              Tailwind CSS.</li>
-            <li><i class="fa-solid fa-check"></i> Implementé manejo de estado global con Zustand.</li>
-            <li><i class="fa-solid fa-check"></i> Creé un panel de estadísticas con react-google-charts.
-            </li>
-            <li><i class="fa-solid fa-check"></i> Integré hardware externo (lector de código de barras).
-            </li>
-          </ul>
-          <div class="experience__tags">
-            <span>Java</span><span>Spring Boot</span><span>React</span><span>MySQL</span><span>Docker</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROYECTOS -->
-    <section class="projects section" id="proyectos">
-      <h2 class="section__title">Proyectos Académicos</h2>
-      <span class="section__subtitle">Trabajos destacados</span>
-
-      <div class="projects__container container grid">
-        <!-- Proyecto 1 -->
-        <article class="projects__card">
-          <div class="projects__content">
-            <h3 class="projects__title">El Buen Sabor</h3>
-            <p class="projects__description">
-              Aplicación web para la gestión integral de un restaurante. Pedidos online, administración de
-              productos, stock y precios.
-            </p>
-            <p class="projects__role"><strong>Rol:</strong> Responsable del Backend (Arquitectura,
-              funcionalidades principales, Code Review).</p>
-            <div class="projects__tags">
-              <span>Java</span><span>Spring
-                Boot</span><span>MySQL</span><span>Auth0</span><span>Cloudinary</span>
-            </div>
-            <a href="#" class="button button--small">
-              Visitar Repositorio <i class="fa-brands fa-github"></i>
-            </a>
-          </div>
-        </article>
-
-        <!-- Proyecto 2 -->
-        <article class="projects__card">
-          <div class="projects__content">
-            <h3 class="projects__title">Sistema de Detección de ADN Mutante</h3>
-            <p class="projects__description">
-              API REST que detecta secuencias de ADN mutante. Recibe cadenas JSON, verifica condiciones y
-              persiste resultados.
-            </p>
-            <div class="projects__tags">
-              <span>Java</span><span>Spring
-                Boot</span><span>H2</span><span>Docker</span><span>Render</span>
-            </div>
-            <a href="#" class="button button--small">
-              Visitar Repositorio <i class="fa-brands fa-github"></i>
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
+    </section>        
   </main>
 
   <footer class="footer">
     <div class="footer__container container">
-      <h1 class="footer__title">Luca Torresi</h1>
-      <ul class="footer__list">
-        <li><a href="#inicio" class="footer__link">Inicio</a></li>
-        <li><a href="#proyectos" class="footer__link">Proyectos</a></li>
-        <li><a href="#experiencia" class="footer__link">Experiencia</a></li>
-      </ul>
+      <div class="footer__contact" style="margin: 2rem 0;">
+        <h2 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Ponte en Contacto</h2>
+        <p style="max-width: 500px; margin: 0 auto 1.5rem auto; font-size: 0.95rem;">
+          Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades para ser parte de tu visión.
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem; font-weight: 600; font-size: 0.95rem;">
+          <a href="mailto:lucatorresifontana@gmail.com" class="footer__link"><i class="fa-regular fa-envelope" style="margin-right: 0.5rem;"></i>lucatorresifontana@gmail.com</a>
+          <a href="https://wa.me/5492612169625" target="_blank" class="footer__link"><i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem;"></i>+54 261 216 9625</a>
+        </div>
+      </div>
       <div class="footer__social">
         <a href="https://www.linkedin.com/in/luca-torresi" target="_blank" class="footer__social-link">
           <i class="fa-brands fa-linkedin"></i>
