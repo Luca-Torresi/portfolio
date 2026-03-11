@@ -18,12 +18,12 @@
   <header class="header">
     <nav class="nav container">
       <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
+                <ul class="nav__list">
           <li class="nav__item"><a href="#inicio" class="nav__link active-link">Inicio</a></li>
           <li class="nav__item"><a href="#perfil" class="nav__link">Perfil</a></li>
+          <li class="nav__item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
           <li class="nav__item"><a href="#educacion" class="nav__link">Educación</a></li>
           <li class="nav__item"><a href="#tecnologias" class="nav__link">Tecnologías</a></li>
-          <li class="nav__item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
         </ul>
         <div class="nav__close" id="nav-close">
           <i class="fa-solid fa-xmark"></i>
@@ -99,55 +99,6 @@
     </section>
 
 
-    <!-- EDUCACION -->
-    <section class="education section" id="educacion">
-      <h2 class="section__title">Educación</h2>
-      <span class="section__subtitle">Mi formación académica</span>
-
-      <div class="education__container container">
-        <div class="education__content">
-          <div class="education__time">
-            <span class="education__rounder"></span>
-            <span class="education__line"></span>
-          </div>
-          <div class="education__data bd-grid">
-            <h3 class="education__title">Tecnicatura Universitaria en Programación</h3>
-            <span class="education__studies">Universidad Tecnológica Nacional (UTN)</span>
-            <span class="education__year">2023 - 2025</span>
-          </div>
-        </div>
-
-        <br>
-
-        <div class="education__content">
-          <div class="education__time">
-            <span class="education__rounder"></span>
-            <span class="education__line"></span>
-          </div>
-          <div class="education__data bd-grid">
-            <h3 class="education__title">Licenciatura en Física</h3>
-            <span class="education__studies">Facultad de Ciencias Exactas y Naturales, UNCuyo</span>
-            <span class="education__year">2018 - 2021</span>
-            <p class="education__description">3 años de estudios avanzados cursados, desarrollando una
-              sólida base en resolución de problemas complejos y pensamiento analítico.</p>
-          </div>
-        </div>
-
-        <br>
-
-        <div class="education__content">
-          <div class="education__time">
-            <span class="education__rounder"></span>
-          </div>
-          <div class="education__data bd-grid">
-            <h3 class="education__title">Bachiller en Ciencias Naturales</h3>
-            <span class="education__studies">Colegio Universitario Central, UNCuyo</span>
-            <span class="education__year">Egresado en 2017</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- EXPERIENCIA -->
     <section class="experience section" id="experiencia">
       <h2 class="section__title">Experiencia Laboral</h2>
@@ -174,8 +125,8 @@
             <li><i class="fa-solid fa-check"></i> <strong>Frontend Interactivo:</strong> Construido con React y Vite,
               gestionando estados complejos con Zustand e interceptores de Axios para la resiliencia de sesiones.</li>
             <li><i class="fa-solid fa-check"></i> <strong>Gestión Multimedia y Hardware:</strong> Integré la API de
-              Cloudinary para optimización de imágenes y sincronicé lectores de códigos de barras físicos manejando
-              latencia de eventos en caja.</li>
+              Cloudinary para optimización de imágenes. Además sincronicé lectores de códigos de barras para el cobro en el local así como también 
+              sincronicé una impresora de etiquetas para la impresión de los código de barra de los productos.</li>
           </ul>
           <div class="experience__tags">
             <span>NestJS</span><span>React</span><span>TypeScript</span><span>AFIP API</span><span>Vercel /
@@ -245,6 +196,55 @@
       </div>
     </section>
 
+    <!-- EDUCACION -->
+    <section class="education section" id="educacion">
+      <h2 class="section__title">Educación</h2>
+      <span class="section__subtitle">Mi formación académica</span>
+
+      <div class="education__container container">
+        <div class="education__content">
+          <div class="education__time">
+            <span class="education__rounder"></span>
+            <span class="education__line"></span>
+          </div>
+          <div class="education__data bd-grid">
+            <h3 class="education__title">Tecnicatura Universitaria en Programación</h3>
+            <span class="education__studies">Universidad Tecnológica Nacional (UTN)</span>
+            <span class="education__year">2023 - 2025</span>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="education__content">
+          <div class="education__time">
+            <span class="education__rounder"></span>
+            <span class="education__line"></span>
+          </div>
+          <div class="education__data bd-grid">
+            <h3 class="education__title">Licenciatura en Física</h3>
+            <span class="education__studies">Facultad de Ciencias Exactas y Naturales, UNCuyo</span>
+            <span class="education__year">2018 - 2021</span>
+            <p class="education__description">3 años de estudios avanzados cursados, desarrollando una
+              sólida base en resolución de problemas complejos y pensamiento analítico.</p>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="education__content">
+          <div class="education__time">
+            <span class="education__rounder"></span>
+          </div>
+          <div class="education__data bd-grid">
+            <h3 class="education__title">Bachiller en Ciencias Naturales</h3>
+            <span class="education__studies">Colegio Universitario Central, UNCuyo</span>
+            <span class="education__year">Egresado en 2017</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- TECNOLOGIAS -->
     <section class="skills section" id="tecnologias">
       <h2 class="section__title">Habilidades Técnicas</h2>
@@ -278,7 +278,7 @@
                 </div>
               </li>
               <li class="skills__data">
-                <i class="fa-solid fa-node.js skills__icon"></i>
+                <i class="fa-brands fa-node-js skills__icon"></i>
                 <div>
                   <h3 class="skills__name">Node.js (NestJS)</h3>
                   <span class="skills__level">Intermedio</span>
@@ -330,13 +330,13 @@
                 </div>
               </li>
               <li class="skills__data">
-                <i class="fa-solid fa-bolt skills__icon"></i>
+                <i class="fa-solid fa-server skills__icon"></i>
                 <div>
                   <h3 class="skills__name">Redis</h3>
                 </div>
               </li>
               <li class="skills__data">
-                <i class="fa-solid fa-bolt skills__icon"></i>
+                <i class="fa-solid fa-database skills__icon"></i>
                 <div>
                   <h3 class="skills__name">MongoDB</h3>
                 </div>
@@ -363,13 +363,13 @@
                 </div>
               </li>
               <li class="skills__data">
-                <i class="fa-solid fa-bolt skills__icon"></i>
+                <i class="fa-solid fa-user-astronaut skills__icon"></i>
                 <div>
                   <h3 class="skills__name">Postman</h3>
                 </div>
               </li>
               <li class="skills__data">
-                <i class="fa-solid fa-bolt skills__icon"></i>
+                <i class="fa-solid fa-book skills__icon"></i>
                 <div>
                   <h3 class="skills__name">Swagger</h3>
                 </div>
@@ -390,7 +390,7 @@
           visión.
         </p>
         <div style="display: flex; flex-direction: column; gap: 0.5rem; font-weight: 600; font-size: 0.95rem;">
-          <a href="mailto:lucatorresifontana@gmail.com" class="footer__link"><i class="fa-regular fa-envelope"
+          <a href="#" id="copy-email" class="footer__link"><i class="fa-regular fa-envelope"
               style="margin-right: 0.5rem;"></i>lucatorresifontana@gmail.com</a>
           <a href="https://wa.me/5492612169625" target="_blank" class="footer__link"><i class="fa-brands fa-whatsapp"
               style="margin-right: 0.5rem;"></i>+54 261 216 9625</a>
@@ -409,6 +409,9 @@
       </span>
     </div>
   </footer>
+
+  <!-- Toast Notificación -->
+  <div id="toast" class="toast"><i class="fa-solid fa-check" style="margin-right: 8px;"></i>¡Correo copiado al portapapeles!</div>
 
   <script src="script.js"></script>
 </body>

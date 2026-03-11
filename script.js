@@ -94,3 +94,26 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   document.head.appendChild(style);
 });
+
+/*==================== COPY EMAIL TO CLIPBOARD ====================*/
+const copyEmailLink = document.getElementById('copy-email');
+const toast = document.getElementById('toast');
+
+if (copyEmailLink) {
+  copyEmailLink.addEventListener('click', function(e) {
+    e.preventDefault(); // Evitamos que el enlace modifique la URL o salte hacia arriba
+    const email = 'lucatorresifontana@gmail.com';
+    
+    // API de portapapeles moderna
+    navigator.clipboard.writeText(email).then(() => {
+      toast.classList.add('show');
+      
+      // Ocultar el toast después de 3 segundos
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }).catch(err => {
+      console.error('Error al copiar el correo: ', err);
+    });
+  });
+}

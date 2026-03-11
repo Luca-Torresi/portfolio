@@ -495,36 +495,39 @@ img {
   .header,
   .main,
   .footer {
-    max-width: 1400px; /* Expande la página casi al total de la pantalla */
+    max-width: 900px; /* Mantener la página centrada pero en una sola columna */
     padding-left: 5%;
     padding-right: 5%;
   }
 
-  .main {
-    display: block; /* Desactiva el flexbox del móvil */
-    column-count: 2; /* Divide las secciones en dos columnas de cascada (masonry) */
-    column-gap: 5rem;
-    position: relative;
-    padding-top: 2rem;
-  }
+  /* Las columnas de cascada se han eliminado en pro de un diseño clásico a una sola columna */
+}
 
-  .home {
-    /* La sección de inicio ocupa ambas columnas como encabezado principal */
-    column-span: all;
-    border-bottom: 2px solid var(--line-color);
-    margin-bottom: 2rem;
-    padding-bottom: 3rem;
-  }
+/* TOAST NOTIFICATION COPY TO CLIPBOARD */
+.toast {
+  visibility: hidden;
+  min-width: 280px;
+  background-color: var(--title-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 14px 20px;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  font-size: 0.95rem;
+  opacity: 0;
+  transition: opacity 0.3s, bottom 0.3s, visibility 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .skills {
-    /* La sección de tecnologías ocupa todo el ancho y no se incluye en las columnas */
-    column-span: all;
-  }
-
-  .section {
-    /* Evita que una sección empiece en una columna y termine en otra */
-    break-inside: avoid;
-    border-bottom: none; /* Quitamos las líneas separadoras, las columnas separan el contenido */
-    padding: 1.5rem 0 3.5rem 0;
-  }
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
 }
